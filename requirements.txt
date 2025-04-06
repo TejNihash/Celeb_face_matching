@@ -1,0 +1,8 @@
+deepface
+streamlit
+opencv-python
+numpy
+scikit-learn
+duckduckgo-search
+pillow
+facenet-pytorch
