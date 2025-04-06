@@ -6,6 +6,8 @@ import numpy as np
 from PIL import Image
 from facenet_pytorch import MTCNN, InceptionResnetV1
 from sklearn.metrics.pairwise import cosine_similarity
+from torchvision import transforms
+
 
 # ---- Setup ----
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -67,7 +69,8 @@ if uploaded_file is not None:
 
         st.subheader("✨ Top Matches:")
         for name, score in top_matches:
-            img_path = celeb_data[name]['path']
+            img_path = f"data/preprocessed_data/{name}/1.jpg"
+
             if os.path.exists(img_path):
                 celeb_img = Image.open(img_path).resize((160, 160))
                 st.image(celeb_img, caption=f"{name} (Similarity: {score:.2f})", width=160)
