@@ -58,16 +58,19 @@ if uploaded_file is not None:
         st.error("😥 Couldn't detect a face. Try another image.")
     else:
         embedding = get_embedding(face_tensor)
+
+        # Convert the face tensor back to a PIL image
+        face_img = transforms.ToPILImage()(face_tensor.squeeze(0).cpu())
+        st.image(face_img, caption='Detected Face', width=160)
+
         top_matches = get_top_matches(embedding, celeb_data)
 
-        st.subheader("✨ Top Matches Are:")
-
+        st.subheader("✨ Top Matches:")
         for name, score in top_matches:
-            img_path = os.path.join("data", "preprocessed_data", name, "0.jpg")
-
+            img_path = celeb_data[name]['path']
             if os.path.exists(img_path):
                 celeb_img = Image.open(img_path).resize((160, 160))
-                st.image(celeb_img, caption=f"{name} (Similarity: {score:.1f})", width=160)
-
+                st.image(celeb_img, caption=f"{name} (Similarity: {score:.2f})", width=160)
             else:
-                st.write(f"{name} (Similarity: {score:.2f})")
+                st.write(f"{name} (Similarity: {score:.2f}) - No image available")
+

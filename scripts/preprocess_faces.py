@@ -4,8 +4,8 @@ from facenet_pytorch import MTCNN
 from tqdm import tqdm
 
 # Input and output directories
-RAW_DIR = "data"
-PROCESSED_DIR = "processed_data"
+RAW_DIR = "data/RAW"
+PROCESSED_DIR = "data/preprocessed_data"
 IMAGE_SIZE = 160  # could also use 224
 
 # Create detector

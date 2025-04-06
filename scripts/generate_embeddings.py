@@ -7,7 +7,7 @@ from facenet_pytorch import InceptionResnetV1
 import torch
 
 # Paths
-PREPROCESSED_DIR = 'preprocessed_data'
+PREPROCESSED_DIR = 'data/preprocessed_data'
 EMBEDDING_FILE = 'embeddings.pkl'
 
 # Load FaceNet model

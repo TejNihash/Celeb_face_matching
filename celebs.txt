@@ -1,22 +1,195 @@
-Shah Rukh Khan  
-Alia Bhatt  
-Hrithik Roshan  
-Deepika Padukone  
-Ranveer Singh  
-Rashmika Mandanna  
-Allu Arjun  
-Nayanthara  
-Prabhas  
-Samantha Ruth Prabhu  
-Pradeep Ranganathan  
-Chris Evans  
-Zendaya  
-Taylor Swift  
-Leonardo DiCaprio  
-Ryan Reynolds  
-Tom Holland  
-Emma Watson  
-Jungkook  
-Dwayne Johnson  
-Margot Robbie  
-Antony Starr
+Shah Rukh Khan
+Aamir Khan
+Salman Khan
+Hrithik Roshan
+Akshay Kumar
+Ranbir Kapoor
+Ranveer Singh
+Varun Dhawan
+Sidharth Malhotra
+Ayushmann Khurrana
+Rajkummar Rao
+Tiger Shroff
+Vicky Kaushal
+Kartik Aaryan
+Nawazuddin Siddiqui
+Irrfan Khan
+Saif Ali Khan
+Arjun Kapoor
+John Abraham
+Emraan Hashmi
+Farhan Akhtar
+Sunny Deol
+Bobby Deol
+Riteish Deshmukh
+Aditya Roy Kapur
+Abhishek Bachchan
+Ajay Devgn
+Kamal Haasan
+Dhanush
+Vijay
+Mahesh Babu
+Allu Arjun
+Prabhas
+Yash
+Nani
+Ram Charan
+Ravi Teja
+Suriya
+Vikram
+Dulquer Salmaan
+Fahadh Faasil
+Nivin Pauly
+Mammootty
+Mohanlal
+Puneeth Rajkumar
+Shiva Rajkumar
+Darshan
+Upendra
+Jagapathi Babu
+Pawan Kalyan
+Deepika Padukone
+Priyanka Chopra
+Katrina Kaif
+Alia Bhatt
+Kareena Kapoor
+Anushka Sharma
+Shraddha Kapoor
+Taapsee Pannu
+Vidya Balan
+Kriti Sanon
+Kangana Ranaut
+Kiara Advani
+Parineeti Chopra
+Yami Gautam
+Radhika Apte
+Rani Mukerji
+Aishwarya Rai
+Sara Ali Khan
+Janhvi Kapoor
+Bhumi Pednekar
+Huma Qureshi
+Mrunal Thakur
+Pooja Hegde
+Nithya Menen
+Sai Pallavi
+Keerthy Suresh
+Rakul Preet Singh
+Tamannaah Bhatia
+Trisha
+Shruti Haasan
+Samantha Ruth Prabhu
+Regina Cassandra
+Ileana D'Cruz
+Taapsee Pannu
+Nargis Fakhri
+Disha Patani
+Jacqueline Fernandez
+Zareen Khan
+Neha Sharma
+Nushrratt Bharuccha
+Sanya Malhotra
+Richa Chadha
+Swara Bhaskar
+Manju Warrier
+Amala Paul
+Hansika Motwani
+Kajal Aggarwal
+Rashi Khanna
+Aditi Rao Hydari
+Mithila Palkar
+Leonardo DiCaprio
+Brad Pitt
+Tom Cruise
+Johnny Depp
+Chris Evans
+Chris Hemsworth
+Robert Downey Jr.
+Ryan Gosling
+Ryan Reynolds
+Matt Damon
+George Clooney
+Ben Affleck
+Christian Bale
+Will Smith
+Dwayne Johnson
+Mark Wahlberg
+Tom Hardy
+Henry Cavill
+Cillian Murphy
+Hugh Jackman
+Keanu Reeves
+Jake Gyllenhaal
+Jason Momoa
+Andrew Garfield
+Tobey Maguire
+Zendaya
+Emma Watson
+Scarlett Johansson
+Natalie Portman
+Jennifer Lawrence
+Anne Hathaway
+Margot Robbie
+Angelina Jolie
+Gal Gadot
+Emma Stone
+Mila Kunis
+Charlize Theron
+Meryl Streep
+Kate Winslet
+Sandra Bullock
+Jessica Chastain
+Florence Pugh
+Rachel McAdams
+Dakota Johnson
+Kristen Stewart
+Emily Blunt
+Reese Witherspoon
+Nicole Kidman
+Julia Roberts
+Natalie Dormer
+Tom Hiddleston
+Paul Rudd
+Sebastian Stan
+Timothée Chalamet
+Jared Leto
+Oscar Isaac
+James McAvoy
+Daniel Craig
+Eddie Redmayne
+Mahershala Ali
+Rami Malek
+Pedro Pascal
+Adam Driver
+Dev Patel
+Joseph Gordon-Levitt
+Saoirse Ronan
+Lily Collins
+Anya Taylor-Joy
+Jodie Comer
+Millie Bobby Brown
+Chloë Grace Moretz
+Elizabeth Olsen
+Kristen Bell
+Viola Davis
+Amy Adams
+Eva Green
+Tessa Thompson
+Naomi Scott
+Lucy Hale
+Zoe Saldana
+Awkwafina
+Janelle Monáe
+Hailee Steinfeld
+Emily Ratajkowski
+Ariana Grande
+Selena Gomez
+Taylor Swift
+Beyoncé
+Billie Eilish
+Lady Gaga
+Drake
+Justin Bieber
+Harry Styles
+Zayn Malik
+Shawn Mendes

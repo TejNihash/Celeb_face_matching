@@ -6,7 +6,7 @@ from io import BytesIO
 
 # Config
 CELEB_LIST_FILE = 'celebs.txt'
-SAVE_DIR = 'data'
+SAVE_DIR = 'data/RAW'
 IMAGES_PER_CELEB = 5
 
 def load_celeb_names(file_path):
@@ -36,6 +36,7 @@ def download_images_for_celeb(name, save_folder, required_images=5, search_limit
 
     if downloaded < required_images:
         print(f"[!] Only found {downloaded}/{required_images} valid images for {name}")
+
 
 
 def main():
