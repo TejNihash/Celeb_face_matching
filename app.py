@@ -47,33 +47,48 @@ def get_top_matches(target_embedding, celeb_data, top_k=3):
     top_matches = sorted(similarities.items(), key=lambda x: x[1], reverse=True)[:top_k]
     return top_matches
 
+import torchvision.transforms as transforms
+
+def tensor_to_pil(face_tensor):
+    denormalize = transforms.Normalize(
+        mean=[-1, -1, -1],
+        std=[2, 2, 2]  # Because [-1,1] → [0,1]
+    )
+    img = denormalize(face_tensor.squeeze(0)).clamp(0, 1)  # remove batch dim and clamp to [0,1]
+    return transforms.ToPILImage()(img.cpu())
+
+
 # ---- Run on Upload ----
+from PIL import Image, ImageOps
+
 if uploaded_file is not None:
-    img = Image.open(uploaded_file).convert('RGB')
-    st.image(img, caption='Uploaded Image', use_container_width=True)
+    try:
+        img = Image.open(uploaded_file).convert('RGB')
+        img = ImageOps.exif_transpose(img)  # Auto-rotate based on EXIF
+        img.thumbnail((800, 800))           # Resize large images
 
-    st.write(" Analyzing...")
+        st.image(img, caption='Uploaded Image', use_column_width=True)
+        st.write("Analyzing...")
 
-    face_tensor = extract_face(img)
+        face_tensor = extract_face(img)
 
-    if face_tensor is None:
-        st.error("😥 Couldn't detect a face. Try another image.")
-    else:
-        embedding = get_embedding(face_tensor)
+        if face_tensor is None:
+            st.error("😥 Couldn't detect a face. Try another image.")
+        else:
+            embedding = get_embedding(face_tensor)
+            top_matches = get_top_matches(embedding, celeb_data)
 
-        # Convert the face tensor back to a PIL image
-        face_img = transforms.ToPILImage()(face_tensor.squeeze(0).cpu())
-        st.image(face_img, caption='Detected Face', width=160)
+            # Show detected face image (optional)
+            
+            face_img = tensor_to_pil(face_tensor)
+            st.image(face_img, caption='Detected Face', use_column_width=False)
 
-        top_matches = get_top_matches(embedding, celeb_data)
 
-        st.subheader("✨ Top Matches:")
-        for name, score in top_matches:
-            img_path = f"data/preprocessed_data/{name}/1.jpg"
-
-            if os.path.exists(img_path):
+            st.subheader("✨ Top Matches:")
+            for name, score in top_matches:
+                img_path = f"data/preprocessed_data/{name}/0.jpg"  # Adjust if needed
                 celeb_img = Image.open(img_path).resize((160, 160))
                 st.image(celeb_img, caption=f"{name} (Similarity: {score:.2f})", width=160)
-            else:
-                st.write(f"{name} (Similarity: {score:.2f}) - No image available")
 
+    except Exception as e:
+        st.error(f"❌ Error processing image: {e}")
